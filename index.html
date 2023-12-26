@@ -6,11 +6,7 @@
     <title>MoMo</title>
     <style>
       body {
-        background: radial-gradient(
-          circle at 10% 20%,
-          rgb(248, 219, 219) 0%,
-          rgb(229, 248, 250) 90%
-        );
+        background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
         font-family: "Roboto";
       }
 
@@ -77,9 +73,6 @@
         cursor: pointer;
         transition: all 0.3s ease-in-out;
       }
-      button:hover {
-        background-color: #eeb6b6;
-      }
 
       .footer {
         color: #000000;
@@ -137,5 +130,22 @@
 
       <p class="footer">Coded by 👩‍💻 Alisha Khatri with HTML, CSS & JS.</p>
     </div>
+    <script>
+      function orderMomo() {
+        let name = prompt("What is your name?");
+        let address = prompt("What is your address?");
+        let emoji = prompt("What is your favourite emoji?");
+
+        if (name && address && emoji) {
+          alert(
+            `Thank you for your order ${name}! Your momo will be delivered to ${address} soon ${emoji}.`
+          );
+        } else {
+          alert("Please fill in all the fields.");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", orderMomo);
+    </script>
   </body>
 </html>
