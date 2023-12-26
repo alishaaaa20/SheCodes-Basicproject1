@@ -3,7 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MoMo</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(248, 219, 219) 0%,
+          rgb(229, 248, 250) 90%
+        );
+        font-family: "Roboto";
+      }
+
+      .container {
+        box-shadow: 0 40px 50px rgba(119, 10, 10, 0.2);
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: #155263;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      h3 {
+        color: #000000;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 650px;
+        border-radius: 10px;
+      }
+
+      p {
+        color: #000000;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: justify;
+      }
+
+      .read-more {
+        padding: 10px 20px;
+        text-decoration: underline;
+        font-size: 25px;
+        color: #155263;
+        font-weight: bold;
+        line-height: 30px;
+      }
+
+      button {
+        color: #ffffff;
+        background-color: #155263;
+        padding: 18px 24px;
+        border-radius: 40px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+        line-height: 20px;
+        margin: 25px auto;
+        width: 80%;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: #eeb6b6;
+      }
+
+      .footer {
+        color: #000000;
+        font-size: 16px;
+        display: block;
+
+        text-align: center;
+        font-style: italic;
+      }
+      hr {
+        border: 0.1px solid #d8e9ed;
+        line-height: 30px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>I love MoMo</h1>
+      <h3>
+        I like many Nepali traditional foods. But, MoMo is my favourite among
+        them.
+      </h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/360/original/momo.jpg?1703593436"
+        alt="MoMo"
+      />
+      <p>
+        A momo is a small round steamed, dumpling or in a half-moon shape, with
+        a juicy meat or vegetable filling. A hearty and juicy morsel, as it is a
+        small dumpling that can be popped whole in the mouth. An experienced
+        momo cook can fashion the wrap deftly and artistically around the tiny
+        filling to make a momo look very elegant. <br />
+        <br />
+
+        Momo is part of Tibetan and Nepalese cuisine which also bears Chinese
+        influences. Newari cuisine of Nepal seems to have had it for a few
+        hundred years. They are also to be found in the cuisine of Arunachal
+        Pradesh of India, which borders China.
+      </p>
+      <br />
+
+      📖<a
+        href="https://en.wikipedia.org/wiki/Momo_(food)#Origin"
+        target="_blank"
+        class="read-more"
+      >
+        <strong> Read more about MoMo </strong></a
+      >
+      <br />
+      <br />
+      <hr />
+      <div>
+        <button>Order MoMo</button>
+      </div>
+
+      <p class="footer">Coded by 👩‍💻 Alisha Khatri with HTML, CSS & JS.</p>
+    </div>
+  </body>
 </html>
